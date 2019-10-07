@@ -1,0 +1,1 @@
+# ghost-storage-google-cloud
