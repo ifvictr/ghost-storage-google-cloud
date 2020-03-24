@@ -27,6 +27,15 @@ Add the following to your configuration file and modify it accordingly.
 }
 ```
 
+Here's a comprehensive list of configurations:
+
+| **Name**    | **Required?** | **Description**                                                          | **Environment variable (prefixed with `GHOST_GOOGLE_CLOUD_`)** |
+|-------------|---------------|--------------------------------------------------------------------------|----------------------------------------------------------------|
+| `baseUrl`   | no            | Base URL of newly saved images. Uses Google Cloud Storage URL by default | `BASE_URL`                                                     |
+| `bucket`    | yes           | Name of the storage bucket                                               | `BUCKET`                                                       |
+| `maxAge`    | no            | Seconds it takes for cache to expire. Defaults to one year               | `MAX_AGE`                                                      |
+| `projectId` | no            | The ID of the project that should be billed                              | `PROJECT_ID`                                                   |
+
 ## License
 
 [MIT](LICENSE.txt)
