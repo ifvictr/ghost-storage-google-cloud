@@ -26,7 +26,8 @@
   "dependencies": {
     "@google-cloud/storage": "^4.6.0",
     "bluebird": "^3.7.2",
-    "ghost-storage-base": "^0.0.4"
+    "ghost-storage-base": "^0.0.4",
+    "is-url": "^1.2.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
