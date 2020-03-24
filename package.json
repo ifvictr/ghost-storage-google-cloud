@@ -1,14 +1,21 @@
 {
   "name": "ghost-storage-google-cloud",
   "version": "1.0.0",
-  "description": "Storage on Google Cloud for Ghost.",
+  "description": "Google Cloud storage adapter for Ghost",
   "homepage": "https://github.com/ifvictr/ghost-storage-google-cloud#readme",
   "bugs": {
     "url": "https://github.com/ifvictr/ghost-storage-google-cloud/issues"
   },
-  "repository": "https://github.com/ifvictr/ghost-storage-google-cloud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ifvictr/ghost-storage-google-cloud.git"
+  },
   "license": "MIT",
-  "author": "Victor Truong <me@ifvictr.com> (https://ifvictr.com)",
+  "author": {
+    "name": "Victor Truong",
+    "email": "victor@victortruong.com",
+    "url": "https://victortruong.com"
+  },
   "main": "./build/index.js",
   "scripts": {
     "build": "yarn clean && babel ./src --out-dir ./build",
