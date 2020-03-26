@@ -57,7 +57,6 @@ class GoogleCloudStorage extends BaseStorage {
                 return this.bucket.upload(file.path, options)
             })
             .then(res => this.getUrl(res[0].name))
-            .catch(Promise.reject)
     }
 
     serve() {
