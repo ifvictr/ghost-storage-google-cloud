@@ -37,15 +37,8 @@ class GoogleCloudStorage extends BaseStorage {
     }
 
     read(options) {
-        return new Promise((resolve, reject) => {
-            const data = []
-            this.bucket.file(options.path).createReadStream()
-                .on('data', data.push)
-                .on('end', () => {
-                    resolve(Buffer.concat(data))
-                })
-                .on('error', reject)
-        })
+        return this.bucket.file(this.getUrl(options.path)).download()
+            .then(res => res[0])
     }
 
     save(file, targetDir) {
