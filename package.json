@@ -1,6 +1,6 @@
 {
   "name": "ghost-storage-google-cloud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google Cloud storage adapter for Ghost",
   "homepage": "https://github.com/ifvictr/ghost-storage-google-cloud#readme",
   "bugs": {
